@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineRate - Оценивай всё</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключаем шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">Cine<span>Rate</span></div>
+        <nav id="auth-section">
+            <!-- Кнопки входа будут генерироваться через JS -->
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="login-modal" class="modal hidden">
+            <div class="modal-content glass-card">
+                <h2>Вход в аккаунт</h2>
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Пароль">
+                <button id="login-btn" class="btn-primary">Войти</button>
+                <button id="register-btn" class="btn-secondary">Регистрация</button>
+                <p id="auth-error" class="error-msg"></p>
+            </div>
+        </section>
+
+        <section class="hero fade-in">
+            <h1>Твои оценки. Твой вкус.</h1>
+            <p>Фильмы, сериалы, аниме — всё в одном месте.</p>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="search-input" placeholder="Найти фильм, сериал или аниме..." class="glass-input">
+        </section>
+
+        <section id="content-grid" class="grid">
+            <!-- Карточки появятся здесь -->
+        </section>
+    </main>
+
+    <!-- Firebase SDKs -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
